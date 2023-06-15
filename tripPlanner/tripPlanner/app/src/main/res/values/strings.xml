@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WorkWithFiles</string>
+    <string-array name="City">
+        <item>Toronto</item>
+        <item>Vancouver</item>
+        <item>Montreal</item>
+        <item>Calgary</item>
+        <item>Waterloo</item>
+    </string-array>
+    <string name="hotel_btn_text">Hotel</string>
+    <string name="flight_btn_text">Flight</string>
+    <string name="trip_btn_text">Trip Details</string>
+    <string name="app_header">Trip Planner</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

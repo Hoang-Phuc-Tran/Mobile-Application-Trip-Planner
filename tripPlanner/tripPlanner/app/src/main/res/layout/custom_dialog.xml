@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Trip Dialog"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanks for using our App!!!"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/dialog_bg"
+            android:backgroundTint="@color/black"
+            android:text="Ok" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="204dp"
+        android:background="@drawable/dialog_bg"
+        android:elevation="10dp"
+        android:padding="9dp"
+        android:src="@drawable/andorid_image"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

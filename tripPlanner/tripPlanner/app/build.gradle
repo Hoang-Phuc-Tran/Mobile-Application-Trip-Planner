@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.example.tripplaner.mainproject"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.example.tripplaner.mainproject'
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+    dataBinding
+            {
+                enabled = true;
+            }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-simplexml:2.5.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'com.android.support.test:runner:1.1.4'
+    testImplementation 'com.android.support.test.espresso:espresso-core:3.5.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+
+    implementation "com.google.accompanist:accompanist-permissions:$accompanist_version"
+}

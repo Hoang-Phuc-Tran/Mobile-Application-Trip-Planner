@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Filename: activity_main.xml
+ * Project: Assignment 3 Trip Planner
+ * Author: Bakr Jasim, Bum Su Yi, Philip Wojdyna, Phuc Tran
+ * Date: March 17, 2023
+ * Description: This is the source code that contains the layout for the main page
+ */
+-->
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.tripplanner.mainproject.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mountain_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:id="@+id/startPlanning"
+            android:layout_width="213dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="156dp"
+            android:text="Start Planning"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.045" />
+
+        <Button
+            android:id="@+id/startTripDetails"
+            android:layout_width="213dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="156dp"
+            android:text="Trip Details"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.371" />
+
+        <Button
+            android:id="@+id/requestPermissions"
+            android:layout_width="213dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="156dp"
+            android:text="Request Map"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.663" />
+
+        <Button
+            android:id="@+id/contactInfo"
+            android:layout_width="213dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="156dp"
+            android:text="CONTACT"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.965" />
+
+        <TextView
+            android:id="@+id/appHeading"
+            android:layout_width="272dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="76dp"
+            android:text="@string/app_header"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

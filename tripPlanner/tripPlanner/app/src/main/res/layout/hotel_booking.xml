@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Filename: hotel_page.xml
+ * Project: Assignment 3 Trip Planner
+ * Author: Bakr Jasim, Bum Su Yi, Philip Wojdyna, Phuc Tran
+ * Date: March 17, 2023
+ * Description: This is the source code that contains the layout for the hotel page
+ */
+-->
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.tripplanner.mainproject.hotelBooking">
+
+        <TextView
+            android:id="@+id/hotelHeader"
+            android:layout_width="294dp"
+            android:layout_height="41dp"
+            android:text=""
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="253dp"
+            android:layout_height="247dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.287">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioBtn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioBtn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioBtn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/peopleCount"
+            android:layout_width="73dp"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Guests"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintVertical_bias="0.208" />
+
+        <EditText
+            android:id="@+id/peopleCounter"
+            android:layout_width="30dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintVertical_bias="0.362" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="135dp"
+            android:layout_height="77dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.902" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="135dp"
+            android:layout_height="77dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toEndOf="@+id/cancelBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.901" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="285dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="12dp"
+            android:max="100"
+            android:progress="66"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
