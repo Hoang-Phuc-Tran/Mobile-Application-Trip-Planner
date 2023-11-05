@@ -1,6 +1,9 @@
-https://github.com/Hoang-Phuc-Tran/Mobile-Application-Trip-Planner/assets/120700092/10eaaa95-74e2-44dc-a0c3-121097dfd038
+
+
+https://github.com/Hoang-Phuc-Tran/Mobile-Application-Trip-Planner/assets/120700092/33a60f0c-ed02-4383-a293-3114cdd65f5b
 
 # Trip Planner App
+
 
 Welcome to the Trip Planner App! This mobile application is designed to simplify the process of planning a trip for groups of 3-4 people. With a user-friendly interface and a range of features, the app streamlines the trip planning experience by allowing users to coordinate destinations, dates, times, flights, hotels.
 
